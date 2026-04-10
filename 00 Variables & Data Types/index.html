@@ -14,12 +14,26 @@
 </head>
 <body>
     <h1>Welcome</h1>
-    <p>Hello, World!</p>
+    <p id="clickText">Hello, World!</p>
+
+    <p id="number1"></p>
+
+    <button id="clickButton">Click Me</button>
 
     </body>
 
     <script>
+        document.getElementById('clickText').addEventListener('click', function() {
+            document.getElementById('clickText').innerText = 'You clicked the text!';
+        });
 
+        // Add listener to button, change text of paragraph and number of second paragraph.
+        document.getElementById('clickButton').addEventListener('click', function() {
+            document.getElementById('clickText').innerText = 'You clicked the button!';
+
+            document.getElementById('number1').innerText = 'Magic number suddenly appears: ' + 42;
+        });
+        document.get
     </script>
     
     <script src="./script.js"></script>
