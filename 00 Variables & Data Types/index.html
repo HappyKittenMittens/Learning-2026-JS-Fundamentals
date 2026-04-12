@@ -74,6 +74,18 @@
 
         // Use Strict saves mistake of undelcaring variables, which worked before.
         num = 5; // This will cause an error in strict mode, because num is not declared with let, const, or var.
+
+        const myBirthday = '15.02.1945'; // Cannot reassign a const variable. This will cause an error.
+        myBirthday = '16.02.1945'; // This will cause an error, because myBirthday is a const variable and cannot be reassigned.
+
+        let admin, name;
+        name = 'Joe';
+        admin  = name;
+        alert(admin);
+
+        let planet = 'Earth';
+        let userName = 'Joe';
+        alert("User " + userName + " lives on planet " + planet + ".");
     </script>
 
     <script>
@@ -88,8 +100,16 @@
             document.getElementById('clickText').innerText = 'You clicked the button!';
 
             document.getElementById('number1').innerText = 'Magic number suddenly appears: ' + 42;
+        
+            let admin, name;
+            name = 'Jane';
+            admin  = name;
+            alert(admin);
+
+            let planet = 'Earth';
+            let userName = 'Joe';
+            alert("User " + userName + " lives on planet " + planet + ".");
         });
-        document.get
     </script>
     
     <script src="./script.js"></script>
