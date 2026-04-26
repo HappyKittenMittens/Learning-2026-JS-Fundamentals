@@ -23,7 +23,7 @@
     </body>
 
     <script>
-        // Testing out various stuff and lessons regarding variables.
+// Testing out various stuff and lessons regarding variables.
 
         // Another update for testing git
 
@@ -31,7 +31,6 @@
         // git add index.html
         // git commit -m "message"
         // git push
-        // 
 
         // Create a variable, then assign a string value to it, and log it in the console.
         let message;
@@ -44,6 +43,7 @@
         user = 'John Doe';
         age = 25;
         message = 'Hi, hey, hello!';
+        console.log(message);
 
         // Third alternative
         user = 'John Doe',
@@ -73,32 +73,45 @@
         alert($ + _); // == 3
  
         // Invalid
-        let 1a; // Cannot start with a number
-        let my-name; // Cannot contain hyphens, as they are interpreted as minus signs
+        //let 1a; // Cannot start with a number
+        // let my-name; // Cannot contain hyphens, as they are interpreted as minus signs
 
         // Case matters. apple and APPLE are different variables.
 
         // Reserved names
-        let let = 5; // Cannot use reserved keywords as variable names. This will cause a syntax error.
-        let return = 5; // Cannot use reserved keywords as variable names. This will cause a syntax error.
+        // let let = 5; // Cannot use reserved keywords as variable names. This will cause a syntax error.
+        //let return = 5; // Cannot use reserved keywords as variable names. This will cause a syntax error.
+        let lett;
+        let returnn;
 
         // Use Strict saves mistake of undelcaring variables, which worked before.
         num = 5; // This will cause an error in strict mode, because num is not declared with let, const, or var.
 
         const myBirthday = '15.02.1945'; // Cannot reassign a const variable. This will cause an error.
-        myBirthday = '16.02.1945'; // This will cause an error, because myBirthday is a const variable and cannot be reassigned.
+        // myBirthday = '16.02.1945'; // This will cause an error, because myBirthday is a const variable and cannot be reassigned.
 
         let admin, name;
-        name = 'Joe';
+        name = 'Cake';
         admin  = name;
         alert(admin);
 
         let planet = 'Earth';
-        let userName = 'Joe';
-        alert("User " + userName + " lives on planet " + planet + ".");
-    </script>
+        let userName2 = 'Knights Who Say NII';
+        alert("User " + userName2 + " lives on planet " + planet + ".");
 
-    <script>
+        
+        // Summary Task / Challenge            
+        /* 
+            1. Declare two variables: admin and name.
+            2. Assign the value "John" to name.
+            3. Copy the value from name to admin.
+            4. Show the value of admin using alert (must output “John”). 
+        */
+
+        let admin2, name2;
+        name2 = 'Zz';
+        admin2 = name2;
+        alert(admin2);
 
         // Testing out eventhandlers and getting elements by id. Dynamically changing the text values.
         document.getElementById('clickText').addEventListener('click', function() {
